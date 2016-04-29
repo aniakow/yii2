@@ -31,18 +31,32 @@ $this->params['breadcrumbs'][] = $this->title;
             //'id',
             'name',
             'nip',
-            'add_date'
-            ], 
+            'address_street',
+            'address_city',
+           // 'add_date',
+            [
+                'attribute'=>'add_date',
+                'value'=>'add_date',
+                'format'=>'raw',
+                'filter'=>DatePicker::widget([
+                    'model' => $searchModel,
+                    'attribute' => 'add_date',
+                        'clientOptions' => [
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd',
+                        ]
+                ]),
+            ],
             // 'address_street',
             // 'address_city',
             // 'address_zip',
             // 'active',
             // 'modify_date',
             // 'comments:ntext',
-            'category_id',
+            //'category_id',
             
-
-            ['class' => 'yii\grid\ActionColumn'],
+           ['class' => 'yii\grid\ActionColumn'], 
         ],
+
     ]); ?>
 </div>

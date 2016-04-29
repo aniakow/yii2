@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "322a9b0033738f1de7445843a97dd4f5",
-    "content-hash": "960e7f105e7b0a3f863f991c3b03d9e7",
+    "hash": "43efb99e01341173e83e340ef468e2be",
+    "content-hash": "7ec339eee1d2dda070ca4e46d2bb1775",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -239,6 +239,65 @@
             ]
         },
         {
+            "name": "cakebake/yii2-less.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakebake/yii2-less.php.git",
+                "reference": "722cd971da0f847a5e12f99cd7a8985ce239bbe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakebake/yii2-less.php/zipball/722cd971da0f847a5e12f99cd7a8985ce239bbe7",
+                "reference": "722cd971da0f847a5e12f99cd7a8985ce239bbe7",
+                "shasum": ""
+            },
+            "require": {
+                "oyejorge/less.php": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "yii\\composer\\Installer::postCreateProject": {
+                    "setPermission": [
+                        {
+                            "runtime": "0777"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "cakebake\\lessphp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-V3"
+            ],
+            "authors": [
+                {
+                    "name": "cakebake (Jens A.)",
+                    "email": "cakebake.dev@gmail.com"
+                }
+            ],
+            "description": "This is a Yii2 wrapper extension for PHP port of the official LESS processor http://lesscss.org.",
+            "keywords": [
+                "assetmanager",
+                "assets",
+                "bundles",
+                "converter",
+                "css",
+                "extension",
+                "less",
+                "less.php",
+                "oyejorge",
+                "php",
+                "yii2"
+            ],
+            "time": "2014-09-22 22:19:14"
+        },
+        {
             "name": "cebe/markdown",
             "version": "1.1.0",
             "source": {
@@ -341,6 +400,68 @@
                 "html"
             ],
             "time": "2015-08-05 01:03:42"
+        },
+        {
+            "name": "oyejorge/less.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oyejorge/less.php.git",
+                "reference": "ca54efbb40403c5665e2dd7335662c44bb9fc644"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/ca54efbb40403c5665e2dd7335662c44bb9fc644",
+                "reference": "ca54efbb40403c5665e2dd7335662c44bb9fc644",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.21"
+            },
+            "bin": [
+                "bin/lessc"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Less": "lib/"
+                },
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Agar",
+                    "homepage": "https://github.com/agar"
+                },
+                {
+                    "name": "Martin Jantošovič",
+                    "homepage": "https://github.com/Mordred"
+                },
+                {
+                    "name": "Josh Schmidt",
+                    "homepage": "https://github.com/oyejorge"
+                }
+            ],
+            "description": "PHP port of the Javascript version of LESS http://lesscss.org",
+            "homepage": "http://lessphp.gpeasy.com",
+            "keywords": [
+                "css",
+                "less",
+                "less.js",
+                "lesscss",
+                "php",
+                "stylesheet"
+            ],
+            "time": "2016-03-23 04:37:27"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -949,7 +1070,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,

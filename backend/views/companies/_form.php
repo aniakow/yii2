@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Companies */
@@ -20,7 +21,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'add_date')->widget(
 
-        DataPicker::className(), [
+        DatePicker::className(), [
             'inline' => false,
             'clientOption' => [
 
@@ -28,7 +29,7 @@ use yii\widgets\ActiveForm;
                 'format' => 'yyyy-m-d'
 
             ]
-        ]) ?>
+        ]); ?>
 
     <?= $form->field($model, 'address_street')->textInput(['maxlength' => true]) ?>
 
