@@ -40,6 +40,11 @@ return [
         'FirstComponent'=>[
             'class'=>'backend\components\FirstComponent',
         ],
+        // 'assetManager' => [
+        //     'converter' => [
+        //         'class' => 'singrana\assets\Converter',
+        //     ],
+        // ],
     ],
     'params' => $params,
 ];
