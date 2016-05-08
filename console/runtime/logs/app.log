@@ -110,3 +110,493 @@ Additional Information:
     ]
     'argc' => 2
 ]
+2016-05-08 16:49:01 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'category' already exists' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_142838_create_category.php(17): yii\db\Migration->createTable('category', Array)
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m160508_142838_create_category->up()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m160508_142838_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'category' already exists
+The SQL being executed was: CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY
+)' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `c...')
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_142838_create_category.php(17): yii\db\Migration->createTable('category', Array)
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m160508_142838_create_category->up()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m160508_142838_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'category' already exists
+)
+
+2016-05-08 16:48:47 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming'
+    'BURN_AUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Burn\\'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'COMMANDER_DRIVE' => 'C:'
+    'COMMANDER_INI' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming\\GHISLER\\wincmd.ini'
+    'COMMANDER_PATH' => 'C:\\totalcmd'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AKOWASKA-DELL'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'EMC_AUTOPLAY' => 'C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/Anna Kowalska/.gnupg'
+    'HISTFILE' => 'c:/Users/Anna Kowalska/.bash_history'
+    'HOME' => 'c:/Users/Anna Kowalska'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Anna Kowalska'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LIB' => 'C:\\Program Files (x86)\\SQLXML 3.0\\bin\\'
+    'LOCALAPPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Local'
+    'LOGNAME' => 'Anna Kowalska'
+    'LOGONSERVER' => '\\\\AKOWASKA-DELL'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\Anna Kowalska\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\DATA\\;c:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;c:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;c:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files\\Intel\\WiFi\\bin\\;c:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;c:\\Program Files (x86)\\Windows Live\\Shared;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\12.0\\DLLShared\\;c:\\Program Files (x86)\\Roxio\\OEM\\AudioCore\\;c:\\xampp\\php\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Git\\cmd;c:\\xampp\\php;c:\\xampp\\mysql\\bin;c:\\SODiR\\lib;c:\\Program Files (x86)\\nodejs\\;c:\\SODiR\\lib;c:\\Program Files (x86)\\Skype\\Phone\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\npm;c:\\xampp\\php;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'c:/xampp/htdocs/yii-project/yii2'
+    'QTJAVA' => 'C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'RCAUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Central 5\\'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '2'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'USERDOMAIN' => 'AKowaska-Dell'
+    'USERNAME' => 'Anna Kowalska'
+    'USERPROFILE' => 'C:\\Users\\Anna Kowalska'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1462718927.3912
+    'REQUEST_TIME' => 1462718927
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-05-08 16:52:12 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'company' already exists' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_143808_create_company.php(19): yii\db\Migration->createTable('company', Array)
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m160508_143808_create_company->up()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m160508_143808_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'company' already exists
+The SQL being executed was: CREATE TABLE `company` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(40),
+	`comments` text
+)' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `c...')
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_143808_create_company.php(19): yii\db\Migration->createTable('company', Array)
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m160508_143808_create_company->up()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m160508_143808_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'company' already exists
+)
+
+2016-05-08 16:52:07 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming'
+    'BURN_AUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Burn\\'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'COMMANDER_DRIVE' => 'C:'
+    'COMMANDER_INI' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming\\GHISLER\\wincmd.ini'
+    'COMMANDER_PATH' => 'C:\\totalcmd'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AKOWASKA-DELL'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'EMC_AUTOPLAY' => 'C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/Anna Kowalska/.gnupg'
+    'HISTFILE' => 'c:/Users/Anna Kowalska/.bash_history'
+    'HOME' => 'c:/Users/Anna Kowalska'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Anna Kowalska'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LIB' => 'C:\\Program Files (x86)\\SQLXML 3.0\\bin\\'
+    'LOCALAPPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Local'
+    'LOGNAME' => 'Anna Kowalska'
+    'LOGONSERVER' => '\\\\AKOWASKA-DELL'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\Anna Kowalska\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\DATA\\;c:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;c:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;c:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files\\Intel\\WiFi\\bin\\;c:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;c:\\Program Files (x86)\\Windows Live\\Shared;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\12.0\\DLLShared\\;c:\\Program Files (x86)\\Roxio\\OEM\\AudioCore\\;c:\\xampp\\php\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Git\\cmd;c:\\xampp\\php;c:\\xampp\\mysql\\bin;c:\\SODiR\\lib;c:\\Program Files (x86)\\nodejs\\;c:\\SODiR\\lib;c:\\Program Files (x86)\\Skype\\Phone\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\npm;c:\\xampp\\php;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'c:/xampp/htdocs/yii-project/yii2'
+    'QTJAVA' => 'C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'RCAUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Central 5\\'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '2'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'USERDOMAIN' => 'AKowaska-Dell'
+    'USERNAME' => 'Anna Kowalska'
+    'USERPROFILE' => 'C:\\Users\\Anna Kowalska'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1462719127.4676
+    'REQUEST_TIME' => 1462719127
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-05-08 19:16:35 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.company' doesn't exist' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(427): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_165403_create_company.php(70): yii\db\Migration->dropForeignKey('fk-company-cate...', 'company')
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(537): m160508_165403_create_company->down()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->migrateDown('m160508_165403_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('down', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('down', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate/down', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/down', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.company' doesn't exist
+The SQL being executed was: ALTER TABLE `company` DROP FOREIGN KEY `fk-company-category_id`' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE `co...')
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(427): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_165403_create_company.php(70): yii\db\Migration->dropForeignKey('fk-company-cate...', 'company')
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(537): m160508_165403_create_company->down()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->migrateDown('m160508_165403_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('down', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('down', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate/down', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/down', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2.company' doesn't exist
+)
+
+2016-05-08 19:15:38 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming'
+    'BURN_AUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Burn\\'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'COMMANDER_DRIVE' => 'C:'
+    'COMMANDER_INI' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming\\GHISLER\\wincmd.ini'
+    'COMMANDER_PATH' => 'C:\\totalcmd'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AKOWASKA-DELL'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'EMC_AUTOPLAY' => 'C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/Anna Kowalska/.gnupg'
+    'HISTFILE' => 'c:/Users/Anna Kowalska/.bash_history'
+    'HOME' => 'c:/Users/Anna Kowalska'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Anna Kowalska'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LIB' => 'C:\\Program Files (x86)\\SQLXML 3.0\\bin\\'
+    'LOCALAPPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Local'
+    'LOGNAME' => 'Anna Kowalska'
+    'LOGONSERVER' => '\\\\AKOWASKA-DELL'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\Anna Kowalska\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\DATA\\;c:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;c:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;c:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files\\Intel\\WiFi\\bin\\;c:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;c:\\Program Files (x86)\\Windows Live\\Shared;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\12.0\\DLLShared\\;c:\\Program Files (x86)\\Roxio\\OEM\\AudioCore\\;c:\\xampp\\php\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Git\\cmd;c:\\xampp\\php;c:\\xampp\\mysql\\bin;c:\\SODiR\\lib;c:\\Program Files (x86)\\nodejs\\;c:\\SODiR\\lib;c:\\Program Files (x86)\\Skype\\Phone\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\npm;c:\\xampp\\php;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'c:/xampp/htdocs/yii-project/yii2'
+    'QTJAVA' => 'C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'RCAUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Central 5\\'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '2'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'USERDOMAIN' => 'AKowaska-Dell'
+    'USERNAME' => 'Anna Kowalska'
+    'USERPROFILE' => 'C:\\Users\\Anna Kowalska'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1462727738.8718
+    'REQUEST_TIME' => 1462727738
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+    ]
+    'argc' => 2
+]
+2016-05-08 19:20:25 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'fk-company-category_id'; check that column/key exists' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(427): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_165403_create_company.php(70): yii\db\Migration->dropForeignKey('fk-company-cate...', 'company')
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(537): m160508_165403_create_company->down()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->migrateDown('m160508_165403_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('down', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('down', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate/down', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/down', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'fk-company-category_id'; check that column/key exists
+The SQL being executed was: ALTER TABLE `company` DROP FOREIGN KEY `fk-company-category_id`' in C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE `co...')
+#1 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\db\Migration.php(427): yii\db\Command->execute()
+#2 C:\xampp\htdocs\yii-project\yii2\console\migrations\m160508_165403_create_company.php(70): yii\db\Migration->dropForeignKey('fk-company-cate...', 'company')
+#3 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(537): m160508_165403_create_company->down()
+#4 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->migrateDown('m160508_165403_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('down', Array)
+#9 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('down', Array)
+#10 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate/down', Array)
+#11 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/down', Array)
+#12 C:\xampp\htdocs\yii-project\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\yii-project\yii2\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1091
+    [2] => Can't DROP 'fk-company-category_id'; check that column/key exists
+)
+
+2016-05-08 19:20:20 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming'
+    'BURN_AUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Burn\\'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'COMMANDER_DRIVE' => 'C:'
+    'COMMANDER_INI' => 'C:\\Users\\Anna Kowalska\\AppData\\Roaming\\GHISLER\\wincmd.ini'
+    'COMMANDER_PATH' => 'C:\\totalcmd'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AKOWASKA-DELL'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'EMC_AUTOPLAY' => 'C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/Anna Kowalska/.gnupg'
+    'HISTFILE' => 'c:/Users/Anna Kowalska/.bash_history'
+    'HOME' => 'c:/Users/Anna Kowalska'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Anna Kowalska'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LIB' => 'C:\\Program Files (x86)\\SQLXML 3.0\\bin\\'
+    'LOCALAPPDATA' => 'C:\\Users\\Anna Kowalska\\AppData\\Local'
+    'LOGNAME' => 'Anna Kowalska'
+    'LOGONSERVER' => '\\\\AKOWASKA-DELL'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\Anna Kowalska\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\;c:\\Program Files (x86)\\Business Objects\\Common\\3.5\\bin\\NOTES\\DATA\\;c:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;c:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;c:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\Program Files\\Intel\\WiFi\\bin\\;c:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;c:\\Program Files (x86)\\Windows Live\\Shared;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;c:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\12.0\\DLLShared\\;c:\\Program Files (x86)\\Roxio\\OEM\\AudioCore\\;c:\\xampp\\php\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Git\\cmd;c:\\xampp\\php;c:\\xampp\\mysql\\bin;c:\\SODiR\\lib;c:\\Program Files (x86)\\nodejs\\;c:\\SODiR\\lib;c:\\Program Files (x86)\\Skype\\Phone\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\npm;c:\\xampp\\php;c:\\Users\\Anna Kowalska\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'c:/xampp/htdocs/yii-project/yii2'
+    'QTJAVA' => 'C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip'
+    'RCAUTOPLAY' => 'C:\\Program Files (x86)\\Roxio\\OEM\\Roxio Central 5\\'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '2'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/ANNAKO~1/AppData/Local/Temp'
+    'USERDOMAIN' => 'AKowaska-Dell'
+    'USERNAME' => 'Anna Kowalska'
+    'USERPROFILE' => 'C:\\Users\\Anna Kowalska'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1462728020.175
+    'REQUEST_TIME' => 1462728020
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+    ]
+    'argc' => 2
+]
