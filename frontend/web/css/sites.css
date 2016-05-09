@@ -111,6 +111,53 @@ textarea .site .breadcrumb li.active,
 .control-btn .site .breadcrumb li.active {
   color: #000624;
 }
+.border-box .site h1,
+.container .site h1,
+.row .site h1,
+[class*=col] .site h1,
+input[type=text] .site h1,
+input[type=password] .site h1,
+input[type=email] .site h1,
+textarea .site h1,
+.dialog-control .site h1,
+.control-btn .site h1 {
+  font-size: 5em;
+}
+.border-box .site .company-view .table,
+.container .site .company-view .table,
+.row .site .company-view .table,
+[class*=col] .site .company-view .table,
+input[type=text] .site .company-view .table,
+input[type=password] .site .company-view .table,
+input[type=email] .site .company-view .table,
+textarea .site .company-view .table,
+.dialog-control .site .company-view .table,
+.control-btn .site .company-view .table,
+.border-box .site .company-view p,
+.container .site .company-view p,
+.row .site .company-view p,
+[class*=col] .site .company-view p,
+input[type=text] .site .company-view p,
+input[type=password] .site .company-view p,
+input[type=email] .site .company-view p,
+textarea .site .company-view p,
+.dialog-control .site .company-view p,
+.control-btn .site .company-view p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.border-box .site .company-form,
+.container .site .company-form,
+.row .site .company-form,
+[class*=col] .site .company-form,
+input[type=text] .site .company-form,
+input[type=password] .site .company-form,
+input[type=email] .site .company-form,
+textarea .site .company-form,
+.dialog-control .site .company-form,
+.control-btn .site .company-form {
+  margin-top: 40px;
+}
 .vertical-center,
 .site-index .jumbotron,
 .navbar-brand {
