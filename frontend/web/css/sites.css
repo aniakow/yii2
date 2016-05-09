@@ -149,13 +149,41 @@ body {
   line-height: 1.5625;
   font-weight: bold;
 }
+.service-index h1,
+.category-index h1,
+.company-index h1 {
+  font-size: 5em;
+}
+.service-index p a.btn,
+.category-index p a.btn,
+.company-index p a.btn {
+  margin-top: 30px;
+}
+.service-index .summary,
+.category-index .summary,
+.company-index .summary {
+  padding-top: 20px;
+}
+.service-index .table,
+.category-index .table,
+.company-index .table {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 .btn-success {
   background-color: #e11b72;
   border-color: #a70050;
   transition: color 0.25s, background-color 0.25s;
 }
 .btn-success:hover,
-.btn-success:focus {
+.btn-success:focus,
+.btn-success:active {
+  background-color: #a70050;
+  border-color: #a70050;
+}
+.btn-success:hover:focus,
+.btn-success:focus:focus,
+.btn-success:active:focus {
   background-color: #a70050;
   border-color: #a70050;
 }
