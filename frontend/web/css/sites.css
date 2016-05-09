@@ -40,6 +40,77 @@ textarea,
 .navbar-brand {
   box-sizing: border-box;
 }
+.border-box .site,
+.container .site,
+.row .site,
+[class*=col] .site,
+input[type=text] .site,
+input[type=password] .site,
+input[type=email] .site,
+textarea .site,
+.dialog-control .site,
+.control-btn .site {
+  padding-top: 70px;
+}
+.border-box .site .breadcrumb,
+.container .site .breadcrumb,
+.row .site .breadcrumb,
+[class*=col] .site .breadcrumb,
+input[type=text] .site .breadcrumb,
+input[type=password] .site .breadcrumb,
+input[type=email] .site .breadcrumb,
+textarea .site .breadcrumb,
+.dialog-control .site .breadcrumb,
+.control-btn .site .breadcrumb {
+  background-color: #fff;
+  text-align: left;
+}
+.border-box .site .breadcrumb li a,
+.container .site .breadcrumb li a,
+.row .site .breadcrumb li a,
+[class*=col] .site .breadcrumb li a,
+input[type=text] .site .breadcrumb li a,
+input[type=password] .site .breadcrumb li a,
+input[type=email] .site .breadcrumb li a,
+textarea .site .breadcrumb li a,
+.dialog-control .site .breadcrumb li a,
+.control-btn .site .breadcrumb li a {
+  color: #000624;
+}
+.border-box .site .breadcrumb li a:hover,
+.container .site .breadcrumb li a:hover,
+.row .site .breadcrumb li a:hover,
+[class*=col] .site .breadcrumb li a:hover,
+input[type=text] .site .breadcrumb li a:hover,
+input[type=password] .site .breadcrumb li a:hover,
+input[type=email] .site .breadcrumb li a:hover,
+textarea .site .breadcrumb li a:hover,
+.dialog-control .site .breadcrumb li a:hover,
+.control-btn .site .breadcrumb li a:hover,
+.border-box .site .breadcrumb li a:focus,
+.container .site .breadcrumb li a:focus,
+.row .site .breadcrumb li a:focus,
+[class*=col] .site .breadcrumb li a:focus,
+input[type=text] .site .breadcrumb li a:focus,
+input[type=password] .site .breadcrumb li a:focus,
+input[type=email] .site .breadcrumb li a:focus,
+textarea .site .breadcrumb li a:focus,
+.dialog-control .site .breadcrumb li a:focus,
+.control-btn .site .breadcrumb li a:focus {
+  color: #a70050 !important;
+}
+.border-box .site .breadcrumb li.active,
+.container .site .breadcrumb li.active,
+.row .site .breadcrumb li.active,
+[class*=col] .site .breadcrumb li.active,
+input[type=text] .site .breadcrumb li.active,
+input[type=password] .site .breadcrumb li.active,
+input[type=email] .site .breadcrumb li.active,
+textarea .site .breadcrumb li.active,
+.dialog-control .site .breadcrumb li.active,
+.control-btn .site .breadcrumb li.active {
+  color: #000624;
+}
 .vertical-center,
 .site-index .jumbotron,
 .navbar-brand {
