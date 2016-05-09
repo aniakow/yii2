@@ -7,14 +7,14 @@ $this->title = 'Application';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Company name</h1>
+        <h1>Nazwa firmy</h1>
 
         <p class="lead">Praesent pulvinar libero eget justo maximus, sit amet vestibulum massa rutrum.</p>
 
         <p>
-            <a class="btn btn-lg btn-success" href="/frontend/web/company/index">Company</a>
-            <a class="btn btn-lg btn-success" href="/frontend/web/service/index">Service</a>
-            <a class="btn btn-lg btn-success" href="/frontend/web/category/index">Category</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/company/index">Firmy</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/service/index">Usługi</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/category/index">Kategorie</a>
         </p>
     </div>
 
