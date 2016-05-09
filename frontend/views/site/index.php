@@ -12,8 +12,9 @@ $this->title = 'Application';
         <p class="lead">Praesent pulvinar libero eget justo maximus, sit amet vestibulum massa rutrum.</p>
 
         <p>
-            <a class="btn btn-lg btn-success" href="/frontend/web/index.php?r=site%2Findex">Company</a>
-            <a class="btn btn-lg btn-success" href="/frontend/web/index.php?r=site%2Findex">Services</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/company/index">Company</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/service/index">Service</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/category/index">Category</a>
         </p>
     </div>
 
