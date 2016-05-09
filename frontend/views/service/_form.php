@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="service-form">
+<div class="col-md-4 col-md-offset-4 service-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
