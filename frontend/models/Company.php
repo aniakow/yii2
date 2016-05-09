@@ -56,15 +56,15 @@ class Company extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'category_id' => 'Category ID',
+            'category_id' => 'Kategoria',
             'add_date' => 'Data dodania',
             'name' => 'Firma',
             'nip' => 'Nip',
-            'address_street' => 'Address Street',
+            'address_street' => 'Ulica',
             'address_city' => 'Miasto',
-            'address_zip' => 'Address Zip',
-            'active' => 'Active',
-            'comments' => 'Comments',
+            'address_zip' => 'Kod pocztowy',
+            'active' => 'Status',
+            'comments' => 'Komentarz',
         ];
     }
 

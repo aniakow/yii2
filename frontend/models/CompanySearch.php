@@ -19,7 +19,7 @@ class CompanySearch extends Company
     {
         return [
             [['id', 'category_id', 'active'], 'integer'],
-            [['add_date', 'name', 'nip', 'address_street', 'address_city', 'address_zip', 'comments'], 'safe'],
+            [['add_date', 'category_id', 'name', 'nip', 'address_street', 'address_city', 'address_zip', 'comments'], 'safe'],
         ];
     }
 
