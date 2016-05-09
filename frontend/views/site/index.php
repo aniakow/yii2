@@ -12,8 +12,8 @@ $this->title = 'Application';
         <p class="lead">Praesent pulvinar libero eget justo maximus, sit amet vestibulum massa rutrum.</p>
 
         <p>
-            <a class="btn btn-lg btn-success" href="/backend/web/index.php?r=site%2Findex">Company</a>
-            <a class="btn btn-lg btn-success" href="/backend/web/index.php?r=site%2Findex">Services</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/index.php?r=site%2Findex">Company</a>
+            <a class="btn btn-lg btn-success" href="/frontend/web/index.php?r=site%2Findex">Services</a>
         </p>
     </div>
 
@@ -21,7 +21,7 @@ $this->title = 'Application';
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2 class="glyf-lg"><span class="glyphicon glyphicon-star"></span></h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -31,7 +31,7 @@ $this->title = 'Application';
                 <p><a class="btn btn-default" href="#">Read more &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2 class="glyf-lg"><span class="glyphicon glyphicon-time"></span></h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -41,7 +41,7 @@ $this->title = 'Application';
                 <p><a class="btn btn-default" href="#">Read more &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2 class="glyf-lg"><span class="glyphicon glyphicon-tags"></span></h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
