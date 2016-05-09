@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/frontend/web/assets/fonts/lato-webfont.eot');
+  src: url('/frontend/web/assets/fonts/lato-webfont.eot?#iefix') format('embedded-opentype'), url('/frontend/web/assets/fonts/lato-webfont.woff') format('woff'), url('/frontend/web/assets/fonts/lato-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('/frontend/web/assets/fonts/lato-bold-webfont.eot');
+  src: url('/frontend/web/assets/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/frontend/web/assets/fonts/lato-bold-webfont.woff') format('woff'), url('/frontend/web/assets/fonts/lato-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/**************************************************************/
+/**************             COLORS               **************/
+/**************************************************************/
+.c-dark,
+body,
+.navbar-brand {
+  color: #000624;
+}
+.bg-white,
+body,
+.site-index .jumbotron,
+.main-header {
+  background-color: #fff;
+}
+.border-box,
+.container,
+.row,
+[class*=col],
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+.dialog-control,
+.control-btn,
+.site-index .jumbotron,
+.navbar-brand {
+  box-sizing: border-box;
+}
+.vertical-center,
+.site-index .jumbotron,
+.navbar-brand {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.vertical-center:before,
+.site-index .jumbotron:before,
+.navbar-brand:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+/**************************************************************/
+/**************              FONTS               **************/
+/**************************************************************/
+.f-lato,
+body {
+  font-family: 'Lato', tahoma, arial, sans-serif;
+}
+/**************************************************************/
+/**************         CONTENT STYLES           **************/
+/**************************************************************/
+.content {
+  font-size: 0.9375em;
+  line-height: 1.66666667;
+}
+.content > * + * {
+  margin-top: 1em;
+}
+.content h3 {
+  margin-bottom: 0;
+  font-size: 1.06666667em;
+  line-height: 1.5625;
+  font-weight: bold;
+}
+.btn-success {
+  background-color: #e11b72;
+  border-color: #a70050;
+  transition: color 0.25s, background-color 0.25s;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #a70050;
+  border-color: #a70050;
+}
+footer.footer {
+  height: 200px;
+  background-color: #a70050;
+  margin-top: 60px;
+}
+footer.footer p {
+  color: #fff;
+  line-height: 90px;
+}
+/**************************************************************/
+/**************           NORMALIZE++            **************/
+/**************************************************************/
+textarea,
+select,
+button,
+input {
+  background-image: none;
+}
+textarea {
+  display: block;
+  resize: vertical;
+}
+blockquote {
+  margin: 0;
+}
+/**************************************************************/
+/**************       GENERAL AND HELPERS        **************/
+/**************************************************************/
+html,
+body {
+  height: 100%;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: 1em;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+a:not([href]) {
+  pointer-events: none;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.h1,
+h1,
+h2.glyf-lg {
+  font-size: 9.286em;
+  line-height: 1;
+}
+.h2,
+h2 {
+  font-size: 1.75em;
+  line-height: 1.35714286;
+}
+@media screen and (max-width: 768px) {
+  .h2,
+  h2 {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .h2,
+  h2 {
+    font-size: 1.375em;
+  }
+}
+.h3,
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .h3,
+  h3 {
+    font-size: 1.125em;
+    line-height: 1.33333333;
+  }
+}
+.h4,
+h4 {
+  font-size: 1em;
+  line-height: 1.25;
+}
+.h5,
+.menu,
+.menu-list {
+  font-size: 0.875em;
+  line-height: 1.42857143;
+}
+.h6 {
+  font-size: 0.75em;
+  line-height: 1.33333333;
+}
+.h8 {
+  font-size: 0.625em;
+  line-height: 1.2;
+}
+h1 {
+  margin: 0;
+  font-weight: 300;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-weight: 300;
+}
+h2.glyf-lg {
+  margin-top: 50px !important;
+  color: #a70050;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-weight: 300;
+}
+.site-index {
+  padding-top: 70px;
+}
+.site-index .jumbotron {
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 0px;
+}
+/**************************************************************/
+/**************          HEADER MENU             **************/
+/**************************************************************/
+.main-header {
+  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.main-menu {
+  text-align: left;
+}
+.menu {
+  height: 50px;
+  white-space: nowrap;
+}
+.menu li {
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  white-space: normal;
+  text-align: center;
+  vertical-align: top;
+}
+.menu li a {
+  letter-spacing: 0.05em;
+}
+.menu li a:hover,
+.menu li a:focus {
+  color: #a70050 !important;
+}
+.menu > :first-child {
+  margin-left: 1em;
+}
+.menu > li.active a {
+  color: #e11b72;
+}
+@media screen and (max-width: 820px) {
+  .menu .menu > :first-child {
+    margin-left: 0;
+  }
+}
+.menu > :nth-child(2):hover > a,
+.menu > :nth-child(2).active > a {
+  color: #e11b72 !important;
+}
+.menu li:hover a:after,
+.menu a:after {
+  top: -18px;
+}
+.menu li a:active {
+  color: #a70050;
+}
+.menu a {
+  position: relative;
+  z-index: 1;
+  line-height: 50px;
+  padding: 0 1.8em;
+  color: #000624;
+  font-weight: bold;
+  transition: background-color 0.25s, color 0.25s;
+}
+@media screen and (max-width: 992px) {
+  .menu a {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+}
+@media screen and (max-width: 820px) {
+  .menu a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.menu-list li,
+.menu-list a {
+  display: block;
+}
+.menu-list a {
+  padding: 1em 1.25em;
+  font-weight: bold;
+  transition: color 0.25s, background-color 0.25s;
+}
+.menu-list a:hover,
+.menu-list a:focus,
+.menu-list a:active {
+  color: #a70050;
+}
+.menu-list a:active {
+  background-color: #000315;
+}
+.menu-list img {
+  max-height: 30px;
+  margin-right: 1em;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+}
+.menu-list > li.active a {
+  color: #e11b72;
+}
+.menu-list li li.active a {
+  color: #e11b72 !important;
+}
+.navbar-brand {
+  height: 50px;
+  padding: .25em .75em;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .main-menu {
+    display: none;
+  }
+}

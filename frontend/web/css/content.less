@@ -1,0 +1,97 @@
+@import 'variables';
+
+/**************************************************************/
+/**************             COLORS               **************/
+/**************************************************************/
+
+.c-dark {
+	color: @dark;
+}
+
+.bg-white {
+	background-color: @white;
+}
+
+.border-box,
+.container,
+.row,
+[class*=col],
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+.dialog-control,
+.control-btn {
+  box-sizing: border-box;
+}
+
+.vertical-center {
+	vertical-align: middle;
+	white-space: nowrap;
+
+	&:before {
+		content: "";
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+	}
+}
+
+/**************************************************************/
+/**************              FONTS               **************/
+/**************************************************************/
+
+.f-lato {
+	font-family: 'Lato', tahoma, arial, sans-serif;
+}
+
+
+/**************************************************************/
+/**************         CONTENT STYLES           **************/
+/**************************************************************/
+
+.content {
+	//25/15
+	font-size: 15/@base-font * 1em;
+	line-height: 25/15;
+
+	> * + * {
+		margin-top: 1em;
+	}
+
+	h3 {
+		margin-bottom: 0;
+
+		font-size: 16/15 * 1em;
+		line-height: 25/16;
+		font-weight: bold;
+	}
+
+}
+
+.btn-success {
+	background-color: @pink;
+    border-color: @ppink;
+
+	transition: color .25s, background-color .25s;
+
+    &:hover,
+	&:focus {
+		background-color:@ppink;
+		border-color: @ppink;
+	}
+
+}
+
+footer {
+	&.footer {
+		height:@footer-height;
+		background-color:@ppink;
+		margin-top: 60px;
+		p {
+			color:@white;
+    		line-height: 90px;
+		}
+	}
+}

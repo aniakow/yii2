@@ -1,0 +1,169 @@
+/**************************************************************/
+/**************          HEADER MENU             **************/
+/**************************************************************/
+
+.main-header {
+
+	border-bottom: 1px solid @grey;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+
+	&:extend(.bg-white);
+}
+
+.main-menu {
+	text-align: left;
+}
+
+.menu {
+	height: @menu-height;
+	white-space: nowrap;
+
+	&:extend(.h5);
+
+	li {
+		display: inline-block;
+		height: 100%;
+		margin-right: -.25em;
+		white-space: normal;
+
+		text-align: center;
+
+		vertical-align: top;
+        
+        a {
+              letter-spacing: 0.05em;
+        }
+
+		a:hover,
+		a:focus {
+			color: @ppink !important;
+		}
+
+	}
+    
+    & > :first-child {
+          margin-left: 1em;
+    }
+    & > li.active a {
+    	color: #e11b72;
+    }
+    @media screen and (max-width: 820px) {
+	    .menu > :first-child {
+	          margin-left: 0;
+	    }
+	    
+    }
+       & > :nth-child(2) {
+          &:hover,
+          &.active {
+              	& > a {
+              		color: #e11b72 !important;
+                }
+          }
+    }
+
+	li:hover a,
+	a {
+		// &:extend(.underline all);
+
+		&:after {
+			top: -18px;
+		}
+		
+	}
+
+	li a:active {
+		//&:extend(.c-pink);
+		color: @ppink;
+	} 
+
+	a {
+		position: relative;
+		z-index: 1;
+		line-height: @menu-height;
+		padding: 0 1.8em;
+		//&:extend(.f-novocento);
+		color: @dark;
+		font-weight: bold;
+
+		transition: background-color .25s, color .25s;
+		// transition-delay: .25s; //only on lvl1
+
+		@media screen and (max-width: 992px) {
+			& {
+				padding-left: 0.7em;
+				padding-right: 0.7em;
+			}
+		}
+		@media screen and (max-width: 820px) {
+			& {
+				padding-left: 0.5em;
+				padding-right: 0.5em;
+			}
+		}
+	}
+
+}
+
+.menu-list {
+	&:extend(.h5);
+
+	li, a {
+		display: block;
+	}
+
+	a {
+		padding: 1em 1.25em;
+
+		font-weight: bold;
+
+		transition: color .25s, background-color .25s;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color:@ppink;
+		}
+
+		&:active {
+			background-color: darken(@dark, 3%);
+		}
+	}
+
+	img {
+		max-height: 30px;
+		margin-right: 1em;
+
+		margin-top: -.5em;
+		margin-bottom: -.5em;
+	}
+
+	& > li.active a {
+		color:#e11b72;
+	}
+	& li li.active a {
+		color:#e11b72 !important;
+	}
+
+}
+
+.navbar-brand {
+	height: @menu-height;
+	padding: .25em .75em;
+	float: left;
+
+	&:extend(.border-box);
+	&:extend(.vertical-center all);
+	&:extend(.c-dark);
+
+}
+
+@media screen and (max-width: 768px) {
+	.hamburger {
+		display: inline-block;
+	}
+
+	.main-menu {
+		display: none;
+	}
+}
