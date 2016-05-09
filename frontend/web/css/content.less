@@ -56,6 +56,15 @@ textarea,
   	    .company-form {
   	    	margin-top:40px;
   	    }
+  	    .category-index,
+  	    .service-index,
+  	    .company-index {
+			.table {
+  	    		th {
+  	    			text-align: center;
+  	    		}
+  	    	}
+  	    }
   }
 }
 
@@ -123,6 +132,18 @@ textarea,
 	.table {
 		margin-top:40px;
 		margin-bottom:20px;
+	}
+}
+
+#modal {
+	.service-create,
+	.category-create,
+	.company-create {
+		.col-md-6 {
+			&.col-md-offset-3 {
+				float:none;
+			}
+		}
 	}
 }
 

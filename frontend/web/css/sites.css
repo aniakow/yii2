@@ -158,6 +158,38 @@ textarea .site .company-form,
 .control-btn .site .company-form {
   margin-top: 40px;
 }
+.border-box .site .category-index .table th,
+.container .site .category-index .table th,
+.row .site .category-index .table th,
+[class*=col] .site .category-index .table th,
+input[type=text] .site .category-index .table th,
+input[type=password] .site .category-index .table th,
+input[type=email] .site .category-index .table th,
+textarea .site .category-index .table th,
+.dialog-control .site .category-index .table th,
+.control-btn .site .category-index .table th,
+.border-box .site .service-index .table th,
+.container .site .service-index .table th,
+.row .site .service-index .table th,
+[class*=col] .site .service-index .table th,
+input[type=text] .site .service-index .table th,
+input[type=password] .site .service-index .table th,
+input[type=email] .site .service-index .table th,
+textarea .site .service-index .table th,
+.dialog-control .site .service-index .table th,
+.control-btn .site .service-index .table th,
+.border-box .site .company-index .table th,
+.container .site .company-index .table th,
+.row .site .company-index .table th,
+[class*=col] .site .company-index .table th,
+input[type=text] .site .company-index .table th,
+input[type=password] .site .company-index .table th,
+input[type=email] .site .company-index .table th,
+textarea .site .company-index .table th,
+.dialog-control .site .company-index .table th,
+.control-btn .site .company-index .table th {
+  text-align: center;
+}
 .vertical-center,
 .site-index .jumbotron,
 .navbar-brand {
@@ -216,6 +248,11 @@ body {
 .company-index .table {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+#modal .service-create .col-md-6.col-md-offset-3,
+#modal .category-create .col-md-6.col-md-offset-3,
+#modal .company-create .col-md-6.col-md-offset-3 {
+  float: none;
 }
 .btn-success {
   background-color: #e11b72;
