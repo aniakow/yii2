@@ -8,9 +8,9 @@ class NameValidator extends Validator {
 
 	public function validateAttribute($model, $attribute) {
 
-		if ( ! preg_match('/.{1,40}$/', $model->$attribute)) {
+		if ( ! preg_match('/.{3,40}$/', $model->$attribute)) {
 
-		    $this->addError($model,$attribute, 'Nazwa firmy musi zawierać mniej niż 40 znaków.');
+		    $this->addError($model,$attribute, 'Nazwa firmy musi zawierać od 3 do 40 znaków.');
 		        
 		}
 
