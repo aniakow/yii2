@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\validators\Validator;
 
 
 /* @var $this yii\web\View */

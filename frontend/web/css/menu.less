@@ -64,7 +64,6 @@
 
 	li:hover a,
 	a {
-		// &:extend(.underline all);
 
 		&:after {
 			top: -18px;
@@ -73,7 +72,6 @@
 	}
 
 	li a:active {
-		//&:extend(.c-pink);
 		color: @ppink;
 	} 
 
@@ -82,12 +80,10 @@
 		z-index: 1;
 		line-height: @menu-height;
 		padding: 0 1.8em;
-		//&:extend(.f-novocento);
 		color: @dark;
 		font-weight: bold;
 
 		transition: background-color .25s, color .25s;
-		// transition-delay: .25s; //only on lvl1
 
 		@media screen and (max-width: 992px) {
 			& {
@@ -105,65 +101,3 @@
 
 }
 
-.menu-list {
-	&:extend(.h5);
-
-	li, a {
-		display: block;
-	}
-
-	a {
-		padding: 1em 1.25em;
-
-		font-weight: bold;
-
-		transition: color .25s, background-color .25s;
-
-		&:hover,
-		&:focus,
-		&:active {
-			color:@ppink;
-		}
-
-		&:active {
-			background-color: darken(@dark, 3%);
-		}
-	}
-
-	img {
-		max-height: 30px;
-		margin-right: 1em;
-
-		margin-top: -.5em;
-		margin-bottom: -.5em;
-	}
-
-	& > li.active a {
-		color:#e11b72;
-	}
-	& li li.active a {
-		color:#e11b72 !important;
-	}
-
-}
-
-.navbar-brand {
-	height: @menu-height;
-	padding: .25em .75em;
-	float: left;
-
-	&:extend(.border-box);
-	&:extend(.vertical-center all);
-	&:extend(.c-dark);
-
-}
-
-@media screen and (max-width: 768px) {
-	.hamburger {
-		display: inline-block;
-	}
-
-	.main-menu {
-		display: none;
-	}
-}

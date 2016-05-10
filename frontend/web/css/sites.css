@@ -16,8 +16,7 @@
 /**************             COLORS               **************/
 /**************************************************************/
 .c-dark,
-body,
-.navbar-brand {
+body {
   color: #000624;
 }
 .bg-white,
@@ -36,8 +35,7 @@ input[type=email],
 textarea,
 .dialog-control,
 .control-btn,
-.site-index .jumbotron,
-.navbar-brand {
+.site-index .jumbotron {
   box-sizing: border-box;
 }
 .border-box .site,
@@ -191,14 +189,12 @@ textarea .site .company-index .table th,
   text-align: center;
 }
 .vertical-center,
-.site-index .jumbotron,
-.navbar-brand {
+.site-index .jumbotron {
   vertical-align: middle;
   white-space: nowrap;
 }
 .vertical-center:before,
-.site-index .jumbotron:before,
-.navbar-brand:before {
+.site-index .jumbotron:before {
   content: "";
   height: 100%;
   display: inline-block;
@@ -380,8 +376,7 @@ h4 {
   line-height: 1.25;
 }
 .h5,
-.menu,
-.menu-list {
+.menu {
   font-size: 0.875em;
   line-height: 1.42857143;
 }
@@ -488,47 +483,5 @@ h3 {
   .menu a {
     padding-left: 0.5em;
     padding-right: 0.5em;
-  }
-}
-.menu-list li,
-.menu-list a {
-  display: block;
-}
-.menu-list a {
-  padding: 1em 1.25em;
-  font-weight: bold;
-  transition: color 0.25s, background-color 0.25s;
-}
-.menu-list a:hover,
-.menu-list a:focus,
-.menu-list a:active {
-  color: #a70050;
-}
-.menu-list a:active {
-  background-color: #000315;
-}
-.menu-list img {
-  max-height: 30px;
-  margin-right: 1em;
-  margin-top: -0.5em;
-  margin-bottom: -0.5em;
-}
-.menu-list > li.active a {
-  color: #e11b72;
-}
-.menu-list li li.active a {
-  color: #e11b72 !important;
-}
-.navbar-brand {
-  height: 50px;
-  padding: .25em .75em;
-  float: left;
-}
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: inline-block;
-  }
-  .main-menu {
-    display: none;
   }
 }

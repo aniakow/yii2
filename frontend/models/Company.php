@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use app\models\NameValidator;
 
 /**
  * This is the model class for table "company".
@@ -37,11 +38,13 @@ class Company extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            //[['category_id'], 'required'],
             [['category_id'], 'required'],
             [['category_id', 'active'], 'integer'],
             [['add_date'], 'safe'],
             [['comments'], 'string'],
-            [['name'], 'string', 'max' => 40],
+            ['name', NameValidator::className()],
+            //[['name'], 'string', 'max' => 40],
             [['nip'], 'string', 'max' => 13],
             [['address_street', 'address_city'], 'string', 'max' => 50],
             [['address_zip'], 'string', 'max' => 6],

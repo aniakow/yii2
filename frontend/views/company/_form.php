@@ -12,7 +12,9 @@ use app\models\Category;
 
 <div class="col-md-6 col-md-offset-3 company-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin([
+                        'enableAjaxValidation'=>true,
+    ]); ?>
 
     <?= $form->field($model, 'category_id')->dropDownList(
 
